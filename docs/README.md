@@ -1,1 +1,1 @@
-## DITEP organisation
+## DITEP organization
