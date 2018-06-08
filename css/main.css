@@ -33,6 +33,7 @@ footer {
     font-size: .8em;
 }
 
+
 ul.posts { 
     margin: 20px auto 40px; 
     font-size: 1.5em;
@@ -40,4 +41,36 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+}
+
+img.img-circle {
+    width: 256px;
+    height: auto;
+    border: 1px solid;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.gallery {
+    margin: 10px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 300px;
+}
+
+p.compact-subtitle {
+    text-align: center;
+}
+
+h4.compact-title{
+    text-align: center;
+}
+
+img.fat-logo {
+    opacity: 0.75;
+    float: right;
+    width: 60%;
+    height: auto;
 }
