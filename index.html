@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Author: Loic Verlingue, Valentin Charvet 2018-->
+<!-- Author: Loic Verlingue, Valentin Charvet 2018 Nesrine Yahmed 2019-->
 <html>
 <head>
     <meta charset="utf-8">
@@ -18,151 +18,204 @@
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="/lib/simple-line-icons/css/simple-line-icons.css">
-    <link href="/css/theme.css" rel="stylesheet"><script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"> -->
-    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link href="/css/theme.css" rel="stylesheet"><script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"> 
+    <link rel="stylesheet" href="css/main.css" type="text/css">-->
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+	<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	-->
     </script>
-                                                                                                                   
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>                                                                                                              
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <script src="/js/analytics.js"></script>
+    <!--<script src="/js/analytics.js"></script>-->
 </head>
 
 
-<body>
-<nav class="navbar navbar-default navbar-fixed-top" id="mainNav">
-    <div class="container"><!-- Brand and toggle get grouped for better mobile display-->
-        <div class="navbar-header">
-            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars">
-            </i></button>
-            <a class="navbar-brand page-scroll" href="/">DITEP data science group</a></div>
-        <!-- Collect the nav links, forms, and other content for toggling-->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-
-                    <a class="page-scroll" href="#projects">Projects</a></li>
-                <li>
-                    <a class="page-scroll" href="#people">People</a></li>
-                <li>
-                    <a class="page-scroll" href="#volunteering">Volunteering</a></li>
-                <li>
-                    <a class="page-scroll" href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<!-- IGR logo op left corner -->
-<img class="fat-logo" src="docs/logo_gustave_roussy_rvb.jpg">
+<body style="background-image: url('docs/bg.jpg'); ">
+	<header>
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+			<div class="collapse navbar-collapse">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+					  <a class="page-scroll" href="#projects"><h7>Projects</h7></a>
+					</li>
+					<li class="nav-item active">
+						<a class="page-scroll" href="#people"><h7>People</h7></a>        
+					</li>
+					<li class="nav-item active">
+						<a class="page-scroll" href="#volunteering"><h7>Volunteering</h7></a>					
+					</li>
+					<li class="nav-item active">
+						<a class="page-scroll" href="https://github.com/DITEP" onclick="window.open(this.href);return false"><h7>Github</h7></a>
+					</li>
+					<li class="nav-item active">
+						<a class="page-scroll" href="https://www.gustaveroussy.fr/fr/ditep" onclick="window.open(this.href);return false"><h7>About us</h7></a>
+					</li>
+					<li class="nav-item active">
+						<a class="page-scroll" href="#contact"><h7>Contact</h7></a>
+					</li>	
+						<div style="position:relative;">
+					<li class="nav-item active">
+						<a class="page-scroll" href="https://www.gustaveroussy.fr/" onclick="window.open(this.href);return false"><h7>Gustave Roussy</h7></a>
+					</li>
+					</div>
+				</ul>
+			</div>			
+		</nav>
+	</header>
 
 
 <section id="header">
     <div class="container">
         <div class="row">
             <div class="col-lg-8">
-                <h1 id="page-title">DITEP data science group</h1>
-                <h2>Data science and machine learning for anti-cancer drug devellopment</h2></div>
-        </div>
-    </div>
-    
-     <div class="row">
-            <div class="col-md-4">
-                <div class="feature-item">
-                    <i class="fa fa-user-md text-primary"></i>
-                    <a class="btn btn-default" href="https://www.gustaveroussy.fr/fr/ditep">Presentation DITEP</a>
-                    <a class="btn btn-default" href="https://github.com/DITEP">Github DITEP</a>
-                </div>
-            </div>
-         </div>
+				<img src="docs/ditep1.jpg" width="150%">
+            </div>	
 </section>
 
-    
+   
     
 <section class="features" id="projects">
+
     <div class="container">
         <div class="row">
              <div class="col-lg-12 text-center">
-                 <div class="section-heading"><h1>Projects</h1>
+                  <div align="left" class="section-heading"><h1>Discover our projects</h1>
                     <p class="text-muted"></p>
                      <hr>
                  </div>
              </div>
-        
-        <div class="row">
-            <div class="col-md-4">
-                <div class="feature-item">
-                    <i class="fa fa-user-md text-primary"></i>
-                    <h2>AmoNet</h2>
-                    <p class="text-muted">Build, simulate and optimise artificial molecular networks.</p>
-                    <a class="btn btn-default" href="https://loicverlingue.github.io/AMoNet/">Project Webpage</a></div>
-            </div>
+			 </div>
 
-            <div class="col-md-4">
-                <div class="feature-item"><i class="fa fa-medkit text-primary"></i>
-                    <h2>RESOLVED2</h2>
-                    <p class="text-muted">Improving the go/no go decision in drug development.</p>
-                    <a class="btn btn-default" href="projects/RESOLVED2">Project Webpage</a></div>
-            </div>
+
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+      <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+      <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="rgba(0,0,0,0.6)"></rect></svg>
+        <div class="container">
+          <div class="carousel-caption text-left">
+            <a href="https://loicverlingue.github.io/AMoNet/" onclick="window.open(this.href);return false"><h1 style="color:#DB5500;">AmoNet</h1></a>
+            <p>Build, simulate and optimise artificial molecular networks.</p>
+            
+          </div>
         </div>
-
-        <div class="row">
-            <div clas="col-md-4">
-                <div class="feature-item">
-                    <i class="fa fa-user-md text primary"></i>
-                    <h2> Processing Toolbox</h2>
-                    <p class="text-muted"> Preprocessing of clinical databases in Python, contains various features to
-                    handle text and categorical with scikit-learn compatible API</p>
-                    <a class="btn btn-default" href="clinical-toolkit"> Project page</a>
-                </div>
-            </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="rgba(0,0,0,0.6)"></rect></svg>
+        <div class="container">
+          <div class="carousel-caption text-left">
+            <a href="https://github.com/DITEP/RESOLVED2" onclick="window.open(this.href);return false"><h1 style="color:#509EA0;">RESOLVED2</h1></a>
+            <p>Improving the go/no go decision in drug development.</p>
+         
+          </div>
         </div>
-
+      </div>
+      <div class="carousel-item active">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="rgba(0,0,0,0.6)"></rect></svg>
+        <div class="container">
+          <div class="carousel-caption text-left">
+            <a href="https://github.com/DITEP/clinical-toolkit" onclick="window.open(this.href);return false"><h1 style="color:#AD0564;">Processing Toolbox</h1></a>
+            <p>Preprocessing of clinical databases in Python, contains various features to handle text and categorical with scikit-learn compatible API.</p>
+            
+          </div>
+        </div>
+      </div>
     </div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  
+  
+  
+
+</div>
+</div>
 </section>
 
 <section class="gray features" id="people">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <div class="section-heading"><h1>People</h1>
-                    <p class="text-muted">Current Members</p></div>
+                <div align="left" class="section-heading"><h1>Meet the group</h1></div>
             </div>
         </div>
+	
+		<div class="polaroid">
+		  <img src="img/LoicVerlingue.png" alt="Loic" style="width:100%">
+		  <div class="container">
+		  <a href="https://www.linkedin.com/in/loic-verlingue-9634549b/" onclick="window.open(this.href);return false">
+			<h4 class="compact-title" style="font-size:20px;">Loic Verlingue</h4>
+          </a>
+			<p class="compact-subtitle"style="font-size:14px;">MD PhDc at Gustave Roussy</p> 			
+		  </div>
+		</div>
 
-        <div class="gallery"> <!-- class="row" -->
-            <div class="feature-item">
-                <img class="img-circle" src="img/LoicVerlingue.png"/>
-                <h4 class="compact-title">Loic Verlingue</h4>
-                <p class="compact-subtitle">MD PhDc</p>
-            </div>
-        </div>
+        <div class="polaroid">
+		  <img src="img/ValentinCharvet.jpeg" alt="Valentin" style="width:100%">
+		  <div class="container">
+		  <a href="https://www.linkedin.com/in/valentin-charvet-4635a2135/" onclick="window.open(this.href);return false">
+		  <h4 class="compact-title" style="font-size:20px;">Valentin Charvet</h4></a>
+                <p class="compact-subtitle" style="font-size:14px;">MS Student - Data Science</p>
+		  </div>
+		</div>
+		
+        <div class="polaroid">
+		  <img src="img/LeoColmet-Daage.jpg" alt="Leo" style="width:100%">
+		  <div class="container">
+		  <a href="https://www.linkedin.com/in/leo-colmet-daage/" onclick="window.open(this.href);return false">
+		  <h4 class="compact-title" style="font-size:20px;">Leo Colmet Daage</h4></a>
+                <p class="compact-subtitle" style="font-size:14px;">Senior Bioinformamtician</p>
+		  </div>
+		</div>
+			
+ <div class="polaroid">
+		  <img src="img/EnricoSartor.jpg" alt="Enrico" style="width:100%">
+		  <div class="container">
+		   <a href="https://www.linkedin.com/in/enrico-sartor-707a0613a/" onclick="window.open(this.href);return false">
+		   <h4 class="compact-title" style="font-size:20px;">Enrico Sartor</h4></a>
+                <p class="compact-subtitle" style="font-size:14px;">AI student at CentraleSuppelec</p>
+		  </div>
+		</div>		
 
-        <div class="gallery">
-            <div class="feature-item">
-                <img class="img-circle" src="img/ValentinCharvet.jpeg"/>
-                <h4 class="compact-title">Valentin Charvet</h4>
-                <p class="compact-subtitle">MS Student - Data Science</p>
-                <p class="compact-subtitle"> valentin.charvet@telecom-paristech.fr </p>
-            </div>
-        </div>
-        
-        <div class="gallery">
-            <div class="feature-item">
-                <img class="img-circle" src="img/LeoColmet-Daage.jpg"/>
-                <h4 class="compact-title">Leo Colmet Daage</h4>
-                <p class="compact-subtitle">Senior Bioinformamtician</p>
-            </div>
-        </div>
-        
-        <div class="gallery">
-            <div class="feature-item">
-                <img class="img-circle" src="img/EnricoSartor.jpg"/>
-                <h4 class="compact-title">Enrico Sartor</h4>
-                <p class="compact-subtitle">AI student at CentraleSuppelec</p>
-            </div>
-        </div>
-        
+ <div class="polaroid">
+		  <img src="img/GuillaumeBeinse.png" alt="Guillaume" style="width:100%">
+		  <div class="container">
+		  <h4 class="compact-title" style="font-size:20px;">Guillaume Beinse</h4>
+                <p class="compact-subtitle" style="font-size:14px;">MD at Gustave Roussy</p>
+		  </div>
+		</div>
+		
+<div class="polaroid">
+		  <img src="img/NesrineYahmed1.jpg" alt="Nesrine" style="width:100%">
+		  <div class="container">
+		  <a href="https://www.linkedin.com/in/nesrineyahmed/" onclick="window.open(this.href);return false">
+		  <h4 class="compact-title" style="font-size:20px;">Nesrine Yahmed</h4></a>
+                <p class="compact-subtitle" style="font-size:14px;">Telecommunication student at INSAT</p>
+		  </div>
+		</div>
+
+<div class="polaroid">
+		  <img src="img/HichemAloui.jpg" alt="Hichem" style="width:100%">
+		  <div class="container">
+		  <a href="https://www.linkedin.com/in/hichem-aloui/" onclick="window.open(this.href);return false">
+		  <h4 class="compact-title" style="font-size:20px;">Hichem Aloui</h4></a>
+                <p class="compact-subtitle" style="font-size:14px;">Telecommunication student at INSAT</p>
+		  </div>
+		</div>
+		
     </div>
 </section>
 
@@ -176,50 +229,49 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1">
-                    <!--<h2>By working with our group, you will:</h2>-->
-                    <p> By working with our group, you will:</p>
-                    <ul>
-                        <li>Work on motivating subjects that can benefit to patients.</li>
-                        <li>Learn, adapt or develop cool tools from data science, NLP or machine/deep learning.</li>
-                        <li>Learn cutting edge methodologies in phase 1 clinical trials.</li>
-                        <li>Meet a great team dedicated to ealry drug development for cancer.</li>
-                    </ul>
+     
+                    
+                    <p align="left" style="font-weight:bold;"> By working with our group, you will:</p>
+					<div class="row">
+					<div class="col-lg-6">
+					
+						<img src="img/v1.png" height="100px" style="border-radius: 50%;"/>
+						<p><strong>Work on motivating subjects that can benefit to patients.</strong></p>
+					</div>
+					
+					<div class="col-lg-6">
+						<img src="img/v2.png" height="100px" style="border-radius: 50%;"/>
+						<p><strong>Learn, adapt or develop cool tools from data science, NLP or machine/deep learning.</strong></p>
+					</div>
+					
+					<div class="col-lg-6">
+						<img src="img/v3.jpg" height="100px" style="border-radius: 50%;"/>
+						<p><strong>Learn cutting edge methodologies in phase 1 clinical trials.</strong></p>
+					</div>
+					
+					<div class="col-lg-6">
+						<img src="img/v4.jpg" height="100px" style="border-radius: 50%;"/>
+						<p><strong>Meet a great team dedicated to ealry drug development for cancer.</strong></p>
+					</div>
+					
+                   
                 </div>
-            </div>
         </div>
     </div>
 </section>
 
-
-<section class="bg-primary" id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <div class="section-heading"><h1>Contact</h1></div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1 text-center">
-                <h2><code>loic.verlingues@gustaveroussy.fr</code></h2></div>
-        </div>
-    </div>
-</section>
 
 <footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center"><a href="/">
-                <img src="/docs/signature.png"></a></div>
-        </div>
-    </div>
-    <ul>
-
-        <li> <a href="https://github.com/DITEP">Github</a></li>
-
-        <li> <a href="https://www.gustaveroussy.fr/"> Gustave Roussy Institute </a> </li>
-    </ul>
+	<div style="display:inline-block; float:left; text-align:left; margin-left:6px;">
+		<h11>DITEP</h11>
+		<h6>Département d'Innovation Thérapeutique et d'Essais Précoces</h6>
+		<h6>contact: loic.verlingues@gustaveroussy.fr </h6>
+	</div>
+	<div style="display:inline-block; float:right;text-align:right; margin-right:6px;">
+		<h22>Gustave Roussy </h22>
+		<h6>Drug development center</h6>
+		<h6>114 Rue Edouard Vaillant, 94800 Villejuif</h6>
+	</div>
 </footer>
 
 </script>
